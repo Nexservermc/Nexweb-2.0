@@ -24,15 +24,7 @@
   <img src="docs/shots/home-light.jpg" width="49%" alt="Homepage (light)">
 </p>
 
-<p align="center">
-  <img src="docs/shots/grid-wall.jpg" width="49%" alt="Mouse-following image wall">
-  <img src="docs/shots/modes.jpg" width="49%" alt="Game modes list">
-</p>
 
-<p align="center">
-  <img src="docs/shots/donate-modal.jpg" width="63%" alt="Donation flow (placeholder QR code shown)">
-  <img src="docs/shots/phone.jpg" width="27%" alt="Mobile view">
-</p>
 
 ## What this site does
 
