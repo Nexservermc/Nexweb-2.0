@@ -1,0 +1,15 @@
+# 依赖与产物
+node_modules/
+package-lock.json
+
+# 本地/临时
+*.log
+.DS_Store
+Thumbs.db
+.taste-skill/
+_attic*/
+*.bak
+
+# 编辑器和系统
+.vscode/
+.idea/

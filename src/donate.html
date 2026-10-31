@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>赞助支持 — NEX 服务器</title>
+<meta name="description" content="NEX 没有任何强制消费。自定义称号 20 元起、飞行礼包 45 元 / 30 天、动画支持与定制内容，全部回馈选项与价格都在这一页。">
+<link rel="canonical" href="https://www.nexserver.top/donate.html">
+<meta name="theme-color" content="#14171a">
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/css/site.css?v={{VER_CSS}}">
+<script src="/js/setting.js?v={{VER_JS}}" defer></script>
+</head>
+<body data-page="donate">
+<!--@icons-->
+<!--@nav-->
+
+<main id="main">
+  <section class="wrap phead">
+    <h1>赞助支持</h1>
+    <p>线路和机器的钱来自自愿支持，没有隐藏档位。</p>
+  </section>
+
+  <section class="section field-accent">
+    <div class="wrap">
+      <h2 class="h2">四个回馈项目</h2>
+      <p class="lead" style="margin-top:16px;max-width:36ch;color:rgba(11,18,12,.8)">每个项目单独计量，互不抵扣。付款前请先和服主确认内容与价格。</p>
+
+      <div class="offers" style="margin-top:clamp(30px,4.4vw,54px)">
+        <div class="offer" data-rise>
+          <p class="offer-h"><strong>自定义称号</strong><span class="price">20 元起</span></p>
+          <ul>
+            <li>赞助 20 元即得 1 个自定义称号</li>
+            <li>每多赞助 5 元增加 1 个字符</li>
+            <li>附赠称号状态效果：力量 / 速度 / 急迫 / 夜视等</li>
+          </ul>
+          <p class="offer-act">
+            <button class="btn btn--ink" type="button" data-plan="自定义称号" data-methods="wechat,alipay">支持此项目</button>
+          </p>
+        </div>
+
+        <div class="offer" data-rise>
+          <p class="offer-h"><strong>飞行礼包</strong><span class="price">45 元 / 30 天</span></p>
+          <ul>
+            <li>赞助 45 元即得 30 天飞行权限</li>
+            <li>使用 <code>/fly</code> 随时开启或关闭</li>
+            <li>进服自动开启飞行模式</li>
+          </ul>
+          <p class="offer-act">
+            <button class="btn btn--ink" type="button" data-plan="飞行礼包" data-methods="wechat,alipay">支持此项目</button>
+          </p>
+        </div>
+
+        <div class="offer" data-rise>
+          <p class="offer-h"><strong>动画支持</strong><span class="price">爱发电</span></p>
+          <ul>
+            <li>支持我们的动画创作，与服务器无关的独立项目</li>
+            <li>仅通过爱发电平台支持</li>
+            <li>每一份支持都是创作动力</li>
+          </ul>
+          <p class="offer-act">
+            <button class="btn btn--ink" type="button" data-plan="动画支持" data-methods="afdian">支持此项目</button>
+          </p>
+        </div>
+
+        <div class="offer" data-rise>
+          <p class="offer-h"><strong>定制内容</strong><span class="price">协商定价</span></p>
+          <ul>
+            <li>任何定制物品属性或创新性内容</li>
+            <li>专属道具、特殊机制、创意玩法</li>
+            <li>价格与内容请与服主或管理员协商，确认后再付款</li>
+          </ul>
+          <p class="offer-act">
+            <button class="btn btn--ink" type="button" data-plan="定制内容" data-methods="wechat,alipay">协商并支持</button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap twocol">
+      <div>
+        <h2 class="h2">怎么付</h2>
+        <p class="body soft" style="margin-top:16px;max-width:40ch">点「支持此项目」→ 过人机验证 → 选支付方式 → 扫码。</p>
+        <p class="body soft" style="margin-top:14px;max-width:40ch">唯一官方渠道：本站页脚列出的官方群组。</p>
+      </div>
+      <div>
+        <h2 class="h2">钱花在哪</h2>
+        <p class="body soft" style="margin-top:16px;max-width:40ch">机器、三条中转线路、备份和宣传，没有工资支出。</p>
+        <p class="body soft" style="margin-top:14px;max-width:40ch">赞助完全自愿，不影响玩法与进度。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="pay-method-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="pay-modal-title">
+  <button class="modal-bg" type="button" data-close="pay-method-modal" aria-label="关闭"></button>
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close="pay-method-modal" aria-label="关闭">×</button>
+    <h2 id="pay-modal-title">选择支付方式</h2>
+    <p class="note" style="margin-top:8px">支持项目：<span id="pay-plan-name">—</span></p>
+    <p class="note" style="margin-top:6px">示例流程：选择支付方式 → 扫码 → 联系服主登记。</p>
+    <div id="hcaptcha-area" style="display:none">
+      <div id="hcaptcha-container"></div>
+      <p id="hcaptcha-status"></p>
+    </div>
+    <div class="pay-methods" id="pay-methods-container" style="display:none"></div>
+    <p class="note" style="margin-top:18px">请确认并与服主取得联系后，确认要支持的内容和项目价格，再对应付款。</p>
+  </div>
+</div>
+
+<div class="modal" id="pay-qr-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qr-title">
+  <button class="modal-bg" type="button" data-close="pay-qr-modal" aria-label="关闭"></button>
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close="pay-qr-modal" aria-label="关闭">×</button>
+    <h2 id="qr-title">扫码支持</h2>
+    <img class="qr" id="qr-img" alt="支付二维码" width="480" height="480" style="display:none" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <p class="note" style="margin-top:12px">这里现在是占位图，正式部署时替换 picture/pay-*.jpg 即可。</p>
+    <p class="note" id="qr-fallback" style="margin-top:16px">示例占位图。正式部署时把收款码放到 picture/pay-*.jpg 即可。</p>
+    <button class="btn btn--ghost" type="button" id="btn-back-pay" style="margin-top:16px">返回重新选择支付方式</button>
+  </div>
+</div>
+
+
+  <div class="gm"><div class="gm-plane"></div></div>
+
+<!--@footer-->
+</body>
+</html>

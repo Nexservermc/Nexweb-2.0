@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>生存功能 — NEX 服务器</title>
+<meta name="description" content="NEX 生存服的功能与指令速查：技能系统、生存币经济、全球拍卖、家园传送、工会社交、反作弊与方块记录。">
+<link rel="canonical" href="https://www.nexserver.top/features.html">
+<meta name="theme-color" content="#14171a">
+<link rel="icon" href="/favicon.png">
+<link rel="stylesheet" href="/css/site.css?v={{VER_CSS}}">
+<script src="/js/setting.js?v={{VER_JS}}" defer></script>
+</head>
+<body data-page="features">
+<!--@icons-->
+<!--@nav-->
+
+<main id="main">
+  <section class="wrap phead">
+    <h1>生存功能</h1>
+    <p>技能、经济、社交、安全，四块拼成一套生存生态。</p>
+  </section>
+
+  <section class="wrap">
+    <div class="fblocks">
+      <div class="fblock" data-rise>
+        <h2>技能系统</h2>
+        <p class="body soft">打开菜单（<code>/cd</code>）点「技能系统」看全部技能。挖矿、钓鱼、跑图这些日常活动都会积累经验，升级后解锁对应的奇妙功能。</p>
+      </div>
+      <div class="fblock" data-rise>
+        <h2>生存币经济</h2>
+        <p class="body soft"><code>/money</code> 看余额，<code>/pay</code> 转账，<code>/balancetop</code> 看财富榜。系统商店出售物品即可获得游戏币，不用靠别的渠道。</p>
+      </div>
+      <div class="fblock" data-rise>
+        <h2>全球拍卖</h2>
+        <p class="body soft"><code>/ah</code> 打开拍卖行，一口价或竞价上架你的珍藏；<code>/ah listed</code> 管理自己正在卖的东西，随时下架。</p>
+      </div>
+      <div class="fblock" data-rise>
+        <h2>家园与传送</h2>
+        <p class="body soft"><code>/sethome</code> 保存家园、<code>/home</code> 一键传送；<code>/tpa</code> 请求传送到别人身边，<code>/back</code> 回到死亡点捡东西。</p>
+      </div>
+      <div class="fblock" data-rise>
+        <h2>工会与社交</h2>
+        <p class="body soft">工会系统可以和伙伴共建势力；聊天里 <code>@</code> 在线玩家会自动提醒对方；想对全服说话用 <code>!</code> 前缀。</p>
+      </div>
+      <div class="fblock" data-rise>
+        <h2>安全与公平</h2>
+        <p class="body soft">专业反作弊系统全面守护，矿物透视有沉默检测，方块记录（<code>/co i</code>）能查清谁动了你的箱子和房子，管理组据此回滚。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="h2">指令速查</h2>
+      <p class="body soft" style="margin-top:14px;max-width:46ch">下面这些都是在聊天框里直接输入的。方括号里的内容换成你自己的名字或数字。</p>
+
+      <table class="cmds cmds--wide">
+        <thead><tr><th scope="col">分类</th><th scope="col">输入</th><th scope="col">作用</th></tr></thead>
+        <tbody>
+          <tr><td>菜单</td><td><code>/cd</code></td><td>打开服务器主菜单，整合大部分插件的 GUI 操作</td></tr>
+          <tr><td>经济</td><td><code>/money</code> · <code>/pay 玩家 金额</code> · <code>/balancetop</code></td><td>查看余额、转账、财富排行榜</td></tr>
+          <tr><td>家园</td><td><code>/sethome 名称</code> · <code>/home 名称</code> · <code>/homes</code></td><td>设置家园、传送回家、查看全部家园</td></tr>
+          <tr><td>传送</td><td><code>/tpa 玩家</code> · <code>/tpahere 玩家</code> · <code>/back</code></td><td>请求传送到对方、邀请对方过来、回到死亡点</td></tr>
+          <tr><td>拍卖</td><td><code>/ah</code> · <code>/ah sell 价格</code> · <code>/ah bid 起拍价</code></td><td>打开拍卖行、一口价上架、竞价上架</td></tr>
+          <tr><td>称号</td><td><code>/plt shop</code> · <code>/plt open</code></td><td>称号商城、打开自己的称号仓库</td></tr>
+          <tr><td>查询</td><td><code>/co i</code></td><td>查询方块、箱子的操作记录</td></tr>
+          <tr><td>计分板</td><td><code>/asb toggle</code></td><td>开启或关闭侧边计分板</td></tr>
+          <tr><td>起床战争</td><td><code>/bw tp 玩家</code></td><td>观战指定玩家的一局战斗</td></tr>
+        </tbody>
+      </table>
+
+      <p class="note" style="margin-top:26px">还有没写在这的：完整分类说明在 <a class="tlink" href="https://github.com/Nexservermc/nexserver/wiki/%E5%8A%9F%E8%83%BD%E5%B8%AE%E5%8A%A9" target="_blank" rel="noopener">官方 Wiki 功能帮助</a>；哪条指令用不了，直接在 QQ 群问。</p>
+    </div>
+  </section>
+
+  <p class="wrap note" style="margin-bottom:clamp(40px,5vw,72px)">插件都做过负载和兼容测试，红石与村民交易保持原版。有问题先报给管理组。</p>
+</main>
+
+
+  <div class="gm"><div class="gm-plane"></div></div>
+
+<!--@footer-->
+</body>
+</html>
